@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Listening Homework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nepali Listening Practice 🎧</h1>
+            <div class="lesson-selector">
+                <label for="video-select">Choose a lesson:</label>
+                <select id="video-select"></select>
+            </div>
+        </header>
+
+        <main>
+            <div class="video-container">
+                <iframe id="video-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="content-grid">
+                <div class="vocabulary-section card">
+                    <h2>Vocabulary 📝</h2>
+                    <p>Key words for this part of the video.</p>
+                    <ul id="vocab-list">
+                        </ul>
+                </div>
+
+                <div class="homework-section">
+                    <div class="transcription-section card">
+                        <h2>Your Transcription</h2>
+                        <p>Listen to the video and write what you hear in Nepali.</p>
+                        <textarea id="transcription-input" placeholder="यहाँ लेख्नुहोस्..."></textarea>
+                    </div>
+
+                    <div class="translation-section card">
+                        <h2>Your Translation</h2>
+                        <p>Now, translate what you wrote into English.</p>
+                        <textarea id="translation-input" placeholder="Translate here..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Your progress is saved automatically. Keep up the great work! ✨</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
