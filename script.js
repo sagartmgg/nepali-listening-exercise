@@ -11,16 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'बर्खा मा तातो पकौडावाली | Nepali Stories',
             videoId: 'oktl4gCOTDY', // Example YouTube video ID
             vocabulary: [
-                'Thulo aakhaale - with big eyes',
-                'Bhandaihunuhunchha - is saying',
-                'Antim maa - at last',
-                'Teti bela - until then',
-                'Bhaauju - sister-in-law',
-                'Kursi - chair',
-                'Taannu - pull',
-                'Jaska kaaran - due to which',
-                'Ladnu - fall',
-                'Tero - your',
+
+                '-- From 1:45 to 2:10 --',
+                'bigboss - (a tv show)',
+                'miss bhayo - missed (happened missed)',
+                'repeat aairaheko hola - may be coming on repeat (about the episodes)',
+                'jau na - lets go',
+                'herau - lets see',
+                'aaraamle - comfortably',
+                'thaalnu - star',
+                'yeseri - just like this',
+                'bitnu - pass as in day passes',
+                '"kaam" ko silsila maa - in the course of "work"',
+                'khojnu - try',
             ]
         },
         {
@@ -133,10 +136,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // 2. Update Vocabulary
         vocabList.innerHTML = ''; // Clear old list
         lesson.vocabulary.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = item;
-            vocabList.appendChild(li);
-        });
+    if (item.startsWith('--')) {
+        vocabList.innerHTML += `<span class="vocab-section-label">${item.replace(/--/g, '').trim()}</span>`;
+    } else {
+        vocabList.innerHTML += `<li>${item}</li>`;
+    }
+});
+
 
         // 3. Load saved work for this lesson
         loadProgress();
