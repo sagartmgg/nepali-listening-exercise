@@ -19,14 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 'jau na - lets go',
                 'herau - lets see',
                 'aaraamle - comfortably',
-                'thaalnu - star',
+                'thaalnu - start / begin',
                 'yeseri - just like this',
                 'bitnu - pass as in day passes',
                 '"kaam" ko silsila maa - in the course of "work"',
                 'khojnu - try',
-                '-- From 1:45 to 2:10 --',
-                
-
+                '-- From 2:10 to 2:37 --',
+                'nikkai - dherai ',
+                'byawasta milaaunu - make arrangement',
+                'jati - approx / around',
+                'sadhai ko laagi - forever',
+                'biwaah garnu - get married',
+                'dhoom dhaam le - with great pomp',
+                'mukh bangyaunu - make faces as in "frown"',
+                'maathi - on/ upon',
+                'anyaay garnu - do injustice',
             ]
             
         },
