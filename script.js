@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 'bitnu - pass as in day passes',
                 '"kaam" ko silsila maa - in the course of "work"',
                 'khojnu - try',
+                '-- From 1:45 to 2:10 --',
+                
+
             ]
+            
         },
         {
             id: 'nepali_story_2',
